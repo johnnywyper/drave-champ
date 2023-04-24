@@ -1,0 +1,400 @@
+* {
+  margin: 0;
+  paddin: 0;
+}
+/* body {
+  width: 1200px;
+  background-color: rgb(80, 26, 26);
+} */
+img {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+body {
+  background-color: #080d25f8;
+  /* margin: 0; */
+  padding: 0;
+  /* display: grid; */
+  /* grid-template-columns: repeat(4, 1fr); */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  /* display: flex;
+  flex-direction: column; */
+}
+
+/* Name */
+
+.champ {
+  background-color: #080d25f8;
+  /* background-color: #f2f2f2; */
+  border: 5px solid #971515;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.champ:hover {
+  color: #dd704c;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  cursor: auto;
+}
+.champ_title {
+  color: white;
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.champ_title {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 100px;
+  margin-bottom: 10px;
+}
+
+.champ_title {
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* champion splash art */
+.draven-poster {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+.image-container {
+  text-align: center;
+}
+
+/* champion descreption */
+
+.descreption .p {
+  font-style: oblique;
+  font-size: 40px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 20px;
+  transition: border-color 0.3s ease;
+}
+.intro {
+  padding: 50px;
+}
+
+.description p {
+  margin-bottom: 50px;
+  cursor: auto;
+}
+
+.cool_courses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.cool_course {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.cool_course:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.cool_course:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.cool_course:hover:before {
+  opacity: 1;
+}
+
+.cool_course img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  transition: all 0.3s ease;
+  transform: scale(1.2);
+  color: #ddd;
+}
+
+.cool_course:hover img {
+  transform: scale(1);
+}
+
+.courses {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.text {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.course {
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+  background-color: rgb(220, 100, 100);
+  padding: 4px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: auto;
+}
+
+.course:hover {
+  background-color: rgb(230, 50, 50);
+  transform: scale(1.05);
+}
+
+.course:active {
+  background-color: rgb(180, 50, 50);
+  transform: scale(0.95);
+}
+
+.course h3 {
+  margin-top: 10px;
+  font-size: 24px;
+  color: white;
+}
+
+.course p {
+  font-size: 18px;
+  color: white;
+}
+
+/* champion name */
+
+/* skins */
+.courses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.course {
+  margin: 20px;
+  position: relative;
+}
+
+.course img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.course {
+  position: relative;
+  display: inline-block;
+}
+
+.course img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.course:hover img {
+  transform: scale(1.1);
+}
+
+.course::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(255, 0, 0, 0.7);
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+.course:hover::before {
+  opacity: 1;
+}
+
+/* abilites */
+/* Set background color for the container */
+.ability-container {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: auto;
+  transition: border-color 0.3s ease;
+}
+.ability-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: auto;
+  justify-content: auto;
+  vertical-align: auto;
+}
+
+.ability:hover {
+  background-color: #ffa07a;
+  color: white;
+  cursor: pointer;
+}
+
+.ability {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+  text-align: center;
+}
+
+/* Set styles for each ability */
+.ability {
+  display: flex;
+  padding: 20px;
+  border-bottom: 1px solid #dddddd;
+  transition: background-color 0.2s;
+}
+
+.ability:hover {
+  background-color: #e3e3e3;
+}
+
+.ability:hover .ability-text h3 {
+  color: #dd704c;
+}
+
+.ability:hover .ability-text p {
+  color: #000000;
+}
+
+.ability-img img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  justify-content: space-between;
+}
+
+.ability-text h3 {
+  font-size: 20px;
+  margin-top: 0;
+  color: #fff;
+}
+
+.ability-text p {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+/* intro */
+.intro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.intro {
+  color: #fff;
+  padding: 50px;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.intro:hover {
+  transform: scale(1.1);
+}
+
+.intro:active {
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.intro::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
+  left: -10px;
+  z-index: -1;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.intro:hover::before {
+  opacity: 1;
+}
+
+.intro::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+  background-image: linear-gradient(135deg, #3d1306 0%, #862409 100%);
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.intro:hover::after {
+  opacity: 1;
+}
