@@ -271,35 +271,26 @@ h1 {
 /* Set background color for the container */
 .ability-container {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  cursor: auto;
+
   transition: border-color 0.3s ease;
 }
 .ability-list {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  align-content: auto;
-  justify-content: auto;
-  vertical-align: auto;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
 .ability:hover {
   background-color: #ffa07a;
   color: white;
-  cursor: pointer;
-}
-
-.ability {
-  flex: 1;
-  min-width: 200px;
-  margin: 10px;
-  text-align: center;
 }
 
 /* Set styles for each ability */
 .ability {
   display: flex;
-  padding: 20px;
+  margin: 10px;
+  padding: 10px;
   border-bottom: 1px solid #dddddd;
   transition: background-color 0.2s;
 }
@@ -325,7 +316,7 @@ h1 {
 
 .ability-text h3 {
   font-size: 20px;
-  margin-top: 0;
+  margin: 10px 10px;
   color: #fff;
 }
 
